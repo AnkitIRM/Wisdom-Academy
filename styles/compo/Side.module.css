@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+
+
+
+.navBar{
+
+    left: 0px;
+    top: 0px;
+    height: 93vh;
+    width: 20%;
+    overflow-y: scroll;
+    font-family: 'Lato', sans-serif;
+
+  
+}
+
+
+.ul{
+    list-style: none;
+    padding: 2rem;
+    font-family: 'Lato', sans-serif;
+
+}
+.li{
+    margin: 0.5rem 0rem;
+    padding: 0.5rem;
+    cursor: auto;
+  
+}
+.li a{
+   
+  
+    display: block;
+    cursor: pointer;
+}
+.hov:hover{
+    color: grey;
+  
+    
+}
+.active{
+    margin: 0.5rem 0rem;
+    padding: 0.5rem;
+    background-color: #e7ebff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+

@@ -1,0 +1,369 @@
+
+
+
+
+/* NavBar css here */
+
+
+.header{
+    position: sticky;
+    top: 0px;
+    z-index: 20;
+    background-color: white;
+    color: black;
+   
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    font-family:  'Lato', sans-serif;;
+}
+.leftContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 2rem;
+    margin-right: -4rem;
+    font-weight: bold;
+ 
+    
+}
+.midContainer{
+    display: flex;
+ 
+  
+}
+
+.mobileList{
+   opacity: 0%;
+
+    
+
+}
+.mobileListBlock{
+  opacity: 0%;
+  
+   
+
+}
+
+.rightContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 2rem;
+    margin-left: -2rem;
+  
+  
+}
+
+.ul{
+    display: flex;
+    list-style: none;
+ 
+
+}
+.li{
+    margin: 0rem 2rem;
+    color: black;
+}
+.menuToggle{
+    display: none;
+}
+.menu{
+    display: none;
+}
+.hov:hover{
+    opacity: 75%;
+}
+
+.active{
+    margin: 0rem 2rem;
+    border-bottom: 2px solid  #933DC9;
+    color: black;
+}
+.hamBurger{
+    display: none;
+}
+.btn{
+    margin: 0rem 0.25rem;
+    box-shadow: 0 4px 14px 0 #00000026;
+    border: none;
+    border-radius: 7px;
+    width: fit-content;
+    padding: 0.50rem 1.5rem;
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: #933DC9;
+    transition: all .25s;
+   
+}
+.btn:hover{
+    background-color:#2e2e2e37 ;
+    cursor: pointer;
+}
+.btn2{
+    margin: 0rem 0.25rem;
+    box-shadow: 0 4px 14px 0 #933dc978;
+    border: none;
+    border-radius: 7px;
+    width: fit-content;
+    padding: 0.50rem 1.5rem;
+    font-size: 1rem;
+    background-color: #933DC9;
+    color: white;
+    transition: all .25s;
+   
+}
+.btn2:hover{
+    background-color:#53118F ;
+    cursor: pointer;
+}
+.listbtn{
+    display: none;
+}
+.btnL{
+display: none;
+}
+.btn2L{
+    display: none;
+    }
+
+@media only screen and (max-width: 900px){
+
+    .hamBurger{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        filter: invert();
+    }
+    
+.active{
+
+   
+    border: none;
+    background-color: #933DC9;
+    
+    /* color: #3DB5FF; */
+    margin: 0.75rem 0rem;
+    margin-right: 2rem;
+    padding: .25rem .5rem;
+
+    margin-left: -.5rem;
+    border-radius: 7px;
+}
+
+  
+    .ul{
+    
+        flex-direction: column;
+        margin-top: 0rem;
+       
+        
+     
+
+    }
+    .li{
+        margin: 0.75rem 0rem;
+    }
+    .rightContainer{
+        display: flex;
+        margin: 0rem 0rem;
+    }
+    /* .mobileList{
+   
+     opacity: 1;
+
+       margin-top: 0rem;
+       width: 100%;
+     height: 0rem; 
+     margin-bottom: 0rem;
+   
+   
+    transition: height 0.5s ease-out , margin 0.5s ease-out;
+    } */
+    
+    .midContainer{
+        flex-direction: column;
+        opacity: 1;
+         margin-top: 0rem;
+         width: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+       overflow-y: hidden;
+      background-color: white;
+      color: black;
+
+       position: absolute;
+       top: 100%;
+      
+     
+     
+      transition: transform 0.25s ease-out;
+        
+     }
+    
+    .mobileListBlock{
+   
+        flex-direction: column;
+       
+         margin-top: 0rem;
+         width: 100%;
+      
+      background-color: white;
+      color: black;
+    
+       position: absolute;
+       top: 100%;
+
+      opacity: 1;
+      /* height: 12rem; */
+      transform: scaleY(1);
+      transform-origin: top;
+     
+
+      transition: transform 0.25s ease-out ;
+       
+       
+
+    }
+   .menuToggle{
+       position: relative;
+      
+       margin: 0.5rem;
+      
+       width: 3rem;
+       height: 3rem;
+       cursor: pointer;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   .menuToggle::before{
+       content: '';
+       position: absolute;
+       width: 2rem;
+       height: .2rem;
+       border-radius: 10px;
+       background: #53118F;
+       transform: translateY(-10px);
+       box-shadow: 0 10px #53118F;
+       transition: 0.5s;
+   }
+   .menuToggle::after{
+    content: '';
+    position: absolute;
+    width: 2rem;
+       height: .2rem;
+    border-radius: 10px;
+    background: #53118F;
+    transform: translateY(10px);
+    
+    transition: 0.5s;
+}
+ 
+    .menu{
+        
+            position: relative;
+      
+       margin: 0.5rem;
+       width: 3rem;
+       height: 3rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+     
+    }
+   
+    .menu::before{
+        content: '';
+       position: absolute;
+       width: 2rem;
+       height: .2rem;
+       border-radius: 10px;
+       background: #53118F;
+
+     
+       transition: 0.5s;
+        transform: translateY(0px) rotate(45deg);
+        box-shadow: 0 0 #53118F;
+
+
+    }
+    
+   
+    .menu::after{
+        content: '';
+        position: absolute;
+        width: 2rem;
+       height: .2rem;
+        border-radius: 10px;
+        background: #53118F;
+       
+        
+        transition: 0.5s;
+        transform: translateY(0px) rotate(-45deg);
+       
+        
+
+    }
+    .btn{
+        display: none;
+    }
+    .btn2{
+        display: none;
+    }
+    .listbtn{
+        display: flex;
+    }
+    .btnL{
+        margin: 0rem 0.25rem;
+        box-shadow: 0 4px 14px 0 #00000026;
+        border: none;
+        border-radius: 7px;
+        width: fit-content;
+        padding: 0.50rem 1.5rem;
+        font-size: 1rem;
+        background-color: #ffffff;
+        color: #933DC9;
+        transition: all .25s;
+        display: flex;
+        margin-left: 0rem;
+       
+
+    }
+    .btnL:hover{
+        background-color:#2e2e2e37 ;
+        cursor: pointer;
+    }
+    .btn2L{
+        margin: 0rem 0.25rem;
+    box-shadow: 0 4px 14px 0 #933dc978;
+    border: none;
+    border-radius: 7px;
+    width: fit-content;
+    padding: 0.50rem 1.5rem;
+    font-size: 1rem;
+    background-color: #933DC9;
+    color: white;
+    transition: all .25s;
+    display: flex;
+   
+    }
+    .btn2L:hover{
+        background-color:#53118F ;
+        cursor: pointer;
+    }
+
+
+
+
+
+
+
+
+}
+
+
